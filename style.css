@@ -1,0 +1,103 @@
+body{
+    background-color: #111;
+}
+
+.container{
+    margin: 0 20%;
+    display: flex;
+    height: 100vh;
+}
+
+.toolbox{
+    flex: 1;
+}
+
+.canvas-container{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.canvas-header{
+    color: #fff;
+    display: flex;
+    flex: 1 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.canvas{
+    display: flex;
+    flex-wrap: wrap;
+    height: 700px;
+    width: 700px;
+    padding: 100px;
+    flex: 0 0 1;
+}
+
+
+*{
+    user-drag: none;
+    -webkit-user-select: none; /* Safari, Chrome */
+    -webkit-user-drag: none;
+    -khtml-user-select: none; /* Konqueror */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE */
+    user-select: none; /* CSS3 */
+}
+
+#grid-size{
+    width: 80%;
+    -webkit-appearance: none;
+    background: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+.text{
+    color: white;
+}
+
+button{
+    background-color: transparent;
+    width: 70%;
+    border: 1px solid white;
+    color: #fff;
+    font-size: 1em;
+    font-family: cursive;
+    cursor: pointer;
+    transition: ease-in-out;
+    transition-duration: 100ms;
+}
+
+button:active{
+    transform: scale(0.99);
+}
+
+.toolbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20% 0;
+}
+
+.range-container{
+    width: 100%;
+    text-align: center;
+}
+
+.colorPicker{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+    height: 20px;
+    width: 20px;
+    border: none;
+    background-color: transparent;
+}
+
+.colorPicker::-webkit-color-swatch{
+    border: 1px solid white;
+}
